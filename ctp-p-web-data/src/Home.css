@@ -1,23 +1,67 @@
-.picture{
-    width: 100%;
-    height: 500px;
-    background-color: rgb(114, 114, 114);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+header{
+    width: 100%;
+    height: 720px;
+    background-color: rgb(114, 114, 114);
+    background-image: url("https://i.pinimg.com/originals/26/b7/d4/26b7d4f643c080d0a26c82b4726b431f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    background-image: url("https://i.pinimg.com/564x/5d/f0/3e/5df03e6ce5988fc1cefaf03fa70dc1fe.jpg");
+    background-size: cover;
+    
+    
+}
+
+
 .carparkingButt{
     width: 214px;
     height: 68px;
     top: 600px;
     left: 613px;
     border-radius: 16px;
-    background-color: #D9D9D9;
+    background-color: #005593;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 40px;
 }
 .carparkingbox{
-    margin-top: 2%;
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+
+.container {
+    display: flex;
+}
+
+.container img {
+    margin: 100px;
+}
+
+.container .text {
+    color: black;
+    margin-top: 180px;
+    margin-right: 50px;
+}
+
+.container .text p:first-child {
+    font-size: 70px;
+    text-align:  center;
+}
+
+.container .text p:nth-child(2) {
+    font-size: 40px;
 }
