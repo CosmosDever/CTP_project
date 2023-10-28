@@ -3,6 +3,8 @@ import "./App.css";
 import Nav from "./Nav";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
+import Contact from "./Contact";
+import About from "./About";
 
 function App() {
   const [count, setCount] = useState({});
@@ -23,6 +25,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/Contact" element={<Contact/>} />
+        <Route path="/About" element={<About/>} />
       </Routes>
     </>
   );
