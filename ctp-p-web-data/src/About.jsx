@@ -35,10 +35,20 @@ const About = () => {
 
             <div>
                 <h3>Our Team</h3>
-                <div className="teampic">                
-                    <img src=""/>
-                    <img src=""/>
-                    <img src=""/>
+                <div className="memberpic">       
+                    <div className="mem1">
+                        <img src=""/>
+                        <h3> name </h3>
+                    </div> 
+                    <div className="mem2">
+                        <img src=""/>
+                        <h4> name </h4>
+                    </div> 
+                    <div className="mem3">
+                        <img src=""/>
+                        <h5> name </h5>
+                    </div>         
+
                 </div>
             </div>
         </body>
