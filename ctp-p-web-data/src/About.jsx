@@ -9,7 +9,7 @@ const About = () => {
                 <div className="about">
                     <img src={about1}/>
                     <p1>
-                        We are a company or website. <br />
+                        <br /> We are a company or website. <br />
                         that is committed to providing hotel parking <br />
                         reservation services to our customers <br />
                         We have a comprehensive service <br />
@@ -29,7 +29,7 @@ const About = () => {
                         customers. We strive to make booking <br />
                         parking quick and easy. and believes <br />
                         that parking should be an important part <br />
-                        of a safe and simple journey.
+                        of a safe and simple journey.<br />
                     </p2>
                     <img src={about2}/>
             </div>
@@ -40,15 +40,15 @@ const About = () => {
                 <div className="memberpic">       
                     <div className="mem1">
                         {/* <img src={ }/> */}
-                        <h3> name </h3>
+                        <p3> name </p3>
                     </div> 
                     <div className="mem2">
                         {/* <img src={ }/> */}
-                        <h4> name </h4>
+                        <p4> name </p4>
                     </div> 
                     <div className="mem3">
                         {/* <img src={ }/> */}
-                        <h5> name </h5>
+                        <p5> name </p5>
                     </div>         
 
                 </div>
