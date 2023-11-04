@@ -1,6 +1,10 @@
 import "./About.css";
 import about1 from './assets/about1.jpg'
 import about2 from './assets/about2.jpg'
+// import mem1 from './assets/mem1.png'
+// import mem2 from './assets/mem2.png'
+// import mem3 from './assets/mem3.jpg'
+
 
 const About = () => {
     return (
@@ -39,15 +43,15 @@ const About = () => {
                 <h3>Our Team</h3>
                 <div className="memberpic">       
                     <div className="mem1">
-                        {/* <img src={ }/> */}
+                        {/* <img src={mem1}/> */}
                         <p3> name </p3>
                     </div> 
                     <div className="mem2">
-                        {/* <img src={ }/> */}
+                        {/* <img src={mem2}/> */}
                         <p4> name </p4>
                     </div> 
                     <div className="mem3">
-                        {/* <img src={ }/> */}
+                        {/* <img src={mem3}/> */}
                         <p5> name </p5>
                     </div>         
 
