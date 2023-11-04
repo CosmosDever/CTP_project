@@ -1,11 +1,13 @@
 import "./About.css";
+import about1 from './assets/about1.jpg'
+import about2 from './assets/about2.jpg'
 
 const About = () => {
     return (
         <body>
             <h1>About Us</h1>
-            <div className="about">
-                    <img src=""/>
+                <div className="about">
+                    <img src={about1}/>
                     <p1>
                         We are a company or website. <br />
                         that is committed to providing hotel parking <br />
@@ -16,7 +18,7 @@ const About = () => {
                         And we strive to make the parking booking <br />
                         process as easy and quick as possible.
                     </p1>
-            </div>
+                </div>
             
 
             <div className="mission">
@@ -29,7 +31,7 @@ const About = () => {
                         that parking should be an important part <br />
                         of a safe and simple journey.
                     </p2>
-                    <img src=""/>
+                    <img src={about2}/>
             </div>
 
 
