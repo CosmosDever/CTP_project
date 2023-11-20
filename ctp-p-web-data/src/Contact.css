@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container2 {
+    width: 700px;
+    height: 800px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    flex-direction: column;
+}
+
+.container3 {
+    width: 700px;
+    height: 900px;  
+    position: relative;
+}
+
+.contactus {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    font-size: 60px;
+    
+}
+
+p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+  
+
+.username-input {
+    position: relative;
+}
+  
+.label-user {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+.user-input {
+    padding: 15px;
+    font-size: 16px;
+    width: 700px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out;
+    padding-left: 80px;
+    font-size: 25px;
+}
+  
+.user-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.userlogo {
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    transform: scale(1.3);
+}
+
+
+
+.mail-input {
+    position: relative;
+}
+  
+.label-mail {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+.m-input {
+    padding: 15px;
+    font-size: 16px;
+    width: 700px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out;
+    padding-left: 80px;
+    font-size: 25px;
+    margin-top: 40px;
+}
+  
+.m-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.mail-logo {
+    position: absolute;
+    left: 12px;
+    top: 26px;
+    transform: scale(1.3);
+}
+
+
+.phone-input {
+    position: relative;
+}
+  
+.label-phone {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
+  
+.p-input {
+    padding: 15px;
+    font-size: 16px;
+    width: 700px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out;
+    padding-left: 80px;
+    font-size: 25px;
+    margin-top: 40px;
+}
+  
+.p-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.send-button {
+    border-radius: 35px;
+    background-color: #005593;
+    border: none;
+    width: 200px;
+    height: 60px;
+    margin-top: 60px;
+    margin-left: 220px;
+    color: white;
+    transition: box-shadow 0.3s;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.phone-logo {
+    position: absolute;
+    left: 12px;
+    top: 26px;
+    transform: scale(1.3);
+}
+
+.backgroud-info-1 {
+    width: 150px;
+    height: 900px;
+    background-color: #005593;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.backgroud-info-2 {
+    width: 700px;
+    height: 700px;
+    background-color: #005593;
+    margin-left: auto;
+    margin-top: 100px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.text-info p {
+    font-size: 45px;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 50px;
+    z-index: 4;
+    display: flex;
+    color: white;
+}
+.facebook-logo {
+    width: 70px;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 23px;
+    z-index: 3;
+    display: flex;
+}
+.facebook-text {
+    width: 70px;
+    position: absolute;
+    margin-top: 140px;
+    margin-left: 130px;
+    z-index: 3;
+    display: flex;
+    font-size: 30px;
+}
+
+.mail-info-logo {
+    width: 70px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 23px;
+    z-index: 3;
+    display: flex;
+}
+
+.mail-text {
+    width: 70px;
+    position: absolute;
+    margin-top: 195px;
+    margin-left: 130px;
+    z-index: 3;
+    display: flex;
+    font-size: 30px;
+}
+
+.phone-info-logo {
+    width: 70px;
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 23px;
+    z-index: 3;
+    display: flex;
+    white-space: nowrap;
+}
+
+.phone-text {
+    width: 70px;
+    position: absolute;
+    margin-top: 255px;
+    margin-left: 130px;
+    z-index: 3;
+    display: flex;
+    font-size: 30px;
+}
+
+.clock-info-logo {
+    width: 70px;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 23px;
+    z-index: 3;
+    display: flex;
+    white-space: nowrap;
+}
+
+.clock-text {
+    width: 70px;
+    position: absolute;
+    margin-top: 315px;
+    margin-left: 130px;
+    z-index: 3;
+    display: flex;
+    font-size: 30px;
+}
