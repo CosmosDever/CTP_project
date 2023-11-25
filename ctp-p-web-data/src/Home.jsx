@@ -5,21 +5,7 @@ import axios from "axios";
 
 
 function Home() {
-
-
-    const [count, setCount] = useState({});
-
-    const getAPI = async () => {
-        const res = await axios.get('http://localhost:3000/Signin-Signup').then(res => res.data);
-        setCount(res);
-    }
-
-    useEffect(() => {
-        getAPI();
-    })
-
-
-
+    
     return (
         <>
             <header>
