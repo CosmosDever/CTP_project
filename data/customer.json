@@ -1,0 +1,202 @@
+[
+  {
+    "ID": 1,
+    "first_name": "John",
+    "last_name": "Doe",
+    "email": "john.doe@email.com",
+    "password": "password123",
+    "phone_number": "123-456-7890"
+  },
+  {
+    "ID": 2,
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "email": "jane.smith@email.com",
+    "password": "pass456",
+    "phone_number": "987-654-3210"
+  },
+  {
+    "ID": 3,
+    "first_name": "Mike",
+    "last_name": "Johnson",
+    "email": "mike.johnson@email.com",
+    "password": "mikepass",
+    "phone_number": "555-123-7890"
+  },
+  {
+    "ID": 4,
+    "first_name": "Emily",
+    "last_name": "Williams",
+    "email": "emily@email.com",
+    "password": "emilypass",
+    "phone_number": "777-999-1234"
+  },
+  {
+    "ID": 5,
+    "first_name": "David",
+    "last_name": "Miller",
+    "email": "david.miller@email.com",
+    "password": "davidpass",
+    "phone_number": "222-333-4444"
+  },
+  {
+    "ID": 6,
+    "first_name": "Anna",
+    "last_name": "Taylor",
+    "email": "anna.taylor@email.com",
+    "password": "annapass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 7,
+    "first_name": "Brian",
+    "last_name": "Jones",
+    "email": "brian.jones@email.com",
+    "password": "brianpass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 8,
+    "first_name": "Olivia",
+    "last_name": "Brown",
+    "email": "olivia@email.com",
+    "password": "oliviapass",
+    "phone_number": "888-999-0000"
+  },
+  {
+    "ID": 9,
+    "first_name": "Daniel",
+    "last_name": "Clark",
+    "email": "daniel.clark@email.com",
+    "password": "danielpass",
+    "phone_number": "123-987-4567"
+  },
+  {
+    "ID": 10,
+    "first_name": "Sophia",
+    "last_name": "White",
+    "email": "sophia.white@email.com",
+    "password": "sophiapass",
+    "phone_number": "567-789-1234"
+  },
+  {
+    "ID": 11,
+    "first_name": "Kevin",
+    "last_name": "Moore",
+    "email": "kevin.moore@email.com",
+    "password": "kevinpass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 12,
+    "first_name": "Emma",
+    "last_name": "Davis",
+    "email": "emma.davis@email.com",
+    "password": "emmapass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 13,
+    "first_name": "Matthew",
+    "last_name": "Thomas",
+    "email": "matthew@email.com",
+    "password": "matthewpass",
+    "phone_number": "777-888-9999"
+  },
+  {
+    "ID": 14,
+    "first_name": "Grace",
+    "last_name": "Roberts",
+    "email": "grace@email.com",
+    "password": "gracepass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 15,
+    "first_name": "Christopher",
+    "last_name": "Hill",
+    "email": "chris@email.com",
+    "password": "chrispass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 16,
+    "first_name": "Lily",
+    "last_name": "Turner",
+    "email": "lily@email.com",
+    "password": "lilypass",
+    "phone_number": "777-888-9999"
+  },
+  {
+    "ID": 17,
+    "first_name": "William",
+    "last_name": "Scott",
+    "email": "william@email.com",
+    "password": "williampass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 18,
+    "first_name": "Ava",
+    "last_name": "Martin",
+    "email": "ava@email.com",
+    "password": "avapass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 19,
+    "first_name": "Andrew",
+    "last_name": "Ward",
+    "email": "andrew@email.com",
+    "password": "andrewpass",
+    "phone_number": "777-888-9999"
+  },
+  {
+    "ID": 20,
+    "first_name": "Ella",
+    "last_name": "Cooper",
+    "email": "ella@email.com",
+    "password": "ellapass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 21,
+    "first_name": "James",
+    "last_name": "Baker",
+    "email": "james@email.com",
+    "password": "jamespass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 22,
+    "first_name": "Mia",
+    "last_name": "Fisher",
+    "email": "mia@email.com",
+    "password": "miapass",
+    "phone_number": "777-888-9999"
+  },
+  {
+    "ID": 23,
+    "first_name": "Logan",
+    "last_name": "Reed",
+    "email": "logan@email.com",
+    "password": "loganpass",
+    "phone_number": "111-222-3333"
+  },
+  {
+    "ID": 24,
+    "first_name": "Abigail",
+    "last_name": "Kelly",
+    "email": "abigail@email.com",
+    "password": "abigailpass",
+    "phone_number": "444-555-6666"
+  },
+  {
+    "ID": 25,
+    "first_name": "Benjamin",
+    "last_name": "Harrison",
+    "email": "benjamin@email.com",
+    "password": "benjaminpass",
+    "phone_number": "777-888-9999"
+  }
+]

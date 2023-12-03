@@ -1,0 +1,302 @@
+[
+  {
+    "ID": 1,
+    "car_vin": "ABC12345678901234",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 2,
+    "car_vin": "DEF23456789012345",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 3,
+    "car_vin": "GHI34567890123456",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 4,
+    "car_vin": "JKL45678901234567",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 5,
+    "car_vin": "MNO56789012345678",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 6,
+    "car_vin": "PQR67890123456789",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 7,
+    "car_vin": "STU78901234567890",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 8,
+    "car_vin": "VWX89012345678901",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 9,
+    "car_vin": "YZA90123456789012",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 10,
+    "car_vin": "BCB01234567890123",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 11,
+    "car_vin": "CDC12345678901234",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 12,
+    "car_vin": "DED23456789012345",
+    "status": "Occupied",
+    "floor": 1
+  },
+  {
+    "ID": 13,
+    "car_vin": "EFE34567890123456",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 14,
+    "car_vin": "FGH45678901234567",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 15,
+    "car_vin": "HIJ56789012345678",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 16,
+    "car_vin": "JKK67890123456789",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 17,
+    "car_vin": "LMN78901234567890",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 18,
+    "car_vin": "OPQ89012345678901",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 19,
+    "car_vin": "RST90123456789012",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 20,
+    "car_vin": "UVU01234567890123",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 21,
+    "car_vin": "VWV12345678901234",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 22,
+    "car_vin": "WXX23456789012345",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 23,
+    "car_vin": "YXY34567890123456",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 24,
+    "car_vin": "ZYZ45678901234567",
+    "status": "Occupied",
+    "floor": 2
+  },
+  {
+    "ID": 25,
+    "car_vin": "AAA56789012345678",
+    "status": "Occupied",
+    "floor": 3
+  },
+  {
+    "ID": 26,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 27,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 28,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 29,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 30,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 31,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 32,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 33,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 34,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 35,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 36,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 37,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 3
+  },
+  {
+    "ID": 38,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 39,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 40,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 41,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 42,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 43,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 44,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 45,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 46,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 47,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 48,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 4
+  },
+  {
+    "ID": 49,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 5
+  },
+  {
+    "ID": 50,
+    "car_vin": null,
+    "status": "Vacant",
+    "floor": 5
+  }
+]

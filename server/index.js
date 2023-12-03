@@ -10,12 +10,12 @@ const db = mysql.createConnection({
     user: "root",
     host: "localhost",
     password: "1234",
-    database: "sakila",
+    database: "ctp_database",
 })
 
 
-app.get('/actor', (req, res) => {
-    db.query("SELECT first_name, last_name FROM actor LIMIT 10", (err, result) => {
+app.get('/customer', (req, res) => {
+    db.query("SELECT * FROM customer", (err, result) => {
         if (err) {
             console.log(err);
         } else {

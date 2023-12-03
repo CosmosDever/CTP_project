@@ -1,0 +1,252 @@
+[
+  {
+    "ID": 100001,
+    "customer_id": 1,
+    "room_num": 201
+  },
+  {
+    "ID": 100002,
+    "customer_id": 2,
+    "room_num": 202
+  },
+  {
+    "ID": 100003,
+    "customer_id": 3,
+    "room_num": 203
+  },
+  {
+    "ID": 100004,
+    "customer_id": 4,
+    "room_num": 204
+  },
+  {
+    "ID": 100005,
+    "customer_id": 5,
+    "room_num": 205
+  },
+  {
+    "ID": 100006,
+    "customer_id": 6,
+    "room_num": 206
+  },
+  {
+    "ID": 100007,
+    "customer_id": 7,
+    "room_num": 207
+  },
+  {
+    "ID": 100008,
+    "customer_id": 8,
+    "room_num": 208
+  },
+  {
+    "ID": 100009,
+    "customer_id": 9,
+    "room_num": 209
+  },
+  {
+    "ID": 100010,
+    "customer_id": 10,
+    "room_num": 210
+  },
+  {
+    "ID": 100011,
+    "customer_id": 11,
+    "room_num": 211
+  },
+  {
+    "ID": 100012,
+    "customer_id": 12,
+    "room_num": 212
+  },
+  {
+    "ID": 100013,
+    "customer_id": 13,
+    "room_num": 213
+  },
+  {
+    "ID": 100014,
+    "customer_id": 14,
+    "room_num": 214
+  },
+  {
+    "ID": 100015,
+    "customer_id": 15,
+    "room_num": 215
+  },
+  {
+    "ID": 200001,
+    "customer_id": 16,
+    "room_num": 216
+  },
+  {
+    "ID": 200002,
+    "customer_id": 17,
+    "room_num": 217
+  },
+  {
+    "ID": 200003,
+    "customer_id": 18,
+    "room_num": 218
+  },
+  {
+    "ID": 200004,
+    "customer_id": 19,
+    "room_num": 219
+  },
+  {
+    "ID": 200005,
+    "customer_id": 20,
+    "room_num": 220
+  },
+  {
+    "ID": 200006,
+    "customer_id": 21,
+    "room_num": 221
+  },
+  {
+    "ID": 200007,
+    "customer_id": 22,
+    "room_num": 222
+  },
+  {
+    "ID": 200008,
+    "customer_id": 23,
+    "room_num": 223
+  },
+  {
+    "ID": 200009,
+    "customer_id": 24,
+    "room_num": 224
+  },
+  {
+    "ID": 200010,
+    "customer_id": 25,
+    "room_num": 225
+  },
+  {
+    "ID": 200011,
+    "customer_id": null,
+    "room_num": 226
+  },
+  {
+    "ID": 200012,
+    "customer_id": null,
+    "room_num": 227
+  },
+  {
+    "ID": 200013,
+    "customer_id": null,
+    "room_num": 228
+  },
+  {
+    "ID": 200014,
+    "customer_id": null,
+    "room_num": 229
+  },
+  {
+    "ID": 200015,
+    "customer_id": null,
+    "room_num": 230
+  },
+  {
+    "ID": 300001,
+    "customer_id": null,
+    "room_num": 231
+  },
+  {
+    "ID": 300002,
+    "customer_id": null,
+    "room_num": 232
+  },
+  {
+    "ID": 300003,
+    "customer_id": null,
+    "room_num": 233
+  },
+  {
+    "ID": 300004,
+    "customer_id": null,
+    "room_num": 234
+  },
+  {
+    "ID": 300005,
+    "customer_id": null,
+    "room_num": 235
+  },
+  {
+    "ID": 300006,
+    "customer_id": null,
+    "room_num": 236
+  },
+  {
+    "ID": 300007,
+    "customer_id": null,
+    "room_num": 237
+  },
+  {
+    "ID": 300008,
+    "customer_id": null,
+    "room_num": 238
+  },
+  {
+    "ID": 300009,
+    "customer_id": null,
+    "room_num": 239
+  },
+  {
+    "ID": 300010,
+    "customer_id": null,
+    "room_num": 240
+  },
+  {
+    "ID": 300011,
+    "customer_id": null,
+    "room_num": 241
+  },
+  {
+    "ID": 300012,
+    "customer_id": null,
+    "room_num": 242
+  },
+  {
+    "ID": 300013,
+    "customer_id": null,
+    "room_num": 243
+  },
+  {
+    "ID": 300014,
+    "customer_id": null,
+    "room_num": 244
+  },
+  {
+    "ID": 300015,
+    "customer_id": null,
+    "room_num": 245
+  },
+  {
+    "ID": 400001,
+    "customer_id": null,
+    "room_num": 246
+  },
+  {
+    "ID": 400002,
+    "customer_id": null,
+    "room_num": 247
+  },
+  {
+    "ID": 400003,
+    "customer_id": null,
+    "room_num": 248
+  },
+  {
+    "ID": 400004,
+    "customer_id": null,
+    "room_num": 249
+  },
+  {
+    "ID": 400005,
+    "customer_id": null,
+    "room_num": 250
+  }
+]
