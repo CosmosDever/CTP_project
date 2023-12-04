@@ -20,8 +20,8 @@ app.get('/customer', (req, res) => {
 
 //Sign-up
 app.post('/signup', (req, res) => {
-    const { first_name, last_name, email,password ,phone_number } = req.body;
-    db.query('INSERT INTO customer (first_name, last_name, email,password ,phone_number) VALUES (?,?,?,?,?)', [first_name, last_name, email,password ,phone_number], (err, result) => {
+    const { ID,first_name, last_name, email,password ,phone_number } = req.body;
+    db.query('INSERT INTO customer (ID,first_name, last_name, email,password ,phone_number) VALUES (?,?,?,?,?,?)', [ID,first_name, last_name, email,password ,phone_number], (err, result) => {
         if (err) {
             console.log(err);
         } else {
