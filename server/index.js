@@ -1,21 +1,39 @@
 const express = require("express");
 const app = express();
-const mysql = require("mysql");
+const db = require("./database");
 const cors = require("cors");
 
 app.use(cors());
 app.use(express.json());
 
-const db = mysql.createConnection({
-    user: "root",
-    host: "localhost",
-    password: "1234",
-    database: "ctp_database",
-})
 
 
 app.get('/customer', (req, res) => {
     db.query("SELECT * FROM customer", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+})
+
+//Sign-up
+app.post('/signup', (req, res) => {
+    const { first_name, last_name, email,password ,phone_number } = req.body;
+    db.query('INSERT INTO customer (first_name, last_name, email,password ,phone_number) VALUES (?,?,?,?,?)', [first_name, last_name, email,password ,phone_number], (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send("Values inserted");
+        }
+    })
+})
+
+//Sing-in
+app.post('/signin', (req, res) => {
+    const { email, password } = req.body;
+    db.query('SELECT * FROM customer WHERE email = ? AND password = ?', [email, password], (err, result) => {
         if (err) {
             console.log(err);
         } else {
