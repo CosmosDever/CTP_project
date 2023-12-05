@@ -28,9 +28,12 @@ const SignInSignUp = () => {
     axios.post('http://localhost:3001/signup', signupData)
       .then(response => {
         console.log(response.data);
-        // You can handle success here
+        alert("Sign-up successful!");
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error(error);
+        alert("Sign-up failed. Please try again."); // Show error alert
+      });
   };
 
   // Handle signin form submission
@@ -38,9 +41,12 @@ const SignInSignUp = () => {
     axios.post('http://localhost:3001/signin', signinData)
       .then(response => {
         console.log(response.data);
-        // You can handle success here
+        alert("Sign-in successful!");
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error(error);
+        alert("Sign-in failed. Please check your credentials."); // Show error alert
+      });
   };
   return (
     <div>

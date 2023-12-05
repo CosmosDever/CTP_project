@@ -21,9 +21,14 @@ app.get('/customer', (req, res) => {
 //Sign-up
 app.post('/signup', (req, res) => {
     const { first_name, last_name, email, password, phone_number } = req.body;
+    if (!first_name || !last_name || !email || !password || !phone_number) {
+        res.send("All fields are required");
+        return;
+    }
 
     // Check if the email already exists in the 'customer' table
     db.query('SELECT * FROM customer WHERE email = ?', [email], (selectErr, selectResult) => {
+        
         if (selectErr) {
             console.log(selectErr);
             res.send("Internal Server Error");
