@@ -16,12 +16,6 @@ const SignInSignUp = () => {
     password: '',
   });
 
-  // Fetch all customers on component mount
-  useEffect(() => {
-    axios.get('http://localhost:3001/customer')
-      .then(response => setCustomers(response.data))
-      .catch(error => console.error(error));
-  }, []);
 
   // Handle signup form submission
   const handleSignup = () => {
