@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const SignInSignUp = () => {
-  const [customers, setCustomers] = useState([]);
   const [signupData, setSignupData] = useState({
     ID: '',
     first_name: '',
@@ -21,8 +21,18 @@ const SignInSignUp = () => {
   const handleSignup = () => {
     axios.post('http://localhost:3001/signup', signupData)
       .then(response => {
-        console.log(response.data);
-        alert("Sign-up successful!");
+        if(response.data=="All fields are required"){
+          console.log(response.data);
+          alert("All fields are required."); // Show error alert
+        }
+        else if(response.data=="Email already exists"){
+          console.log(response.data);
+          alert("Email already exists. Please try again."); // Show error alert
+        }
+        else if(response.data=="Sign-up successful"){
+          console.log(response.data);
+          alert("Sign-up successful!");
+        }
       })
       .catch(error => {
         console.error(error);
@@ -34,8 +44,14 @@ const SignInSignUp = () => {
   const handleSignin = () => {
     axios.post('http://localhost:3001/signin', signinData)
       .then(response => {
-        console.log(response.data);
-        alert("Sign-in successful!");
+        if(response.data=="logged in"){
+          console.log(response.data);
+          alert("Sign-in successful!");
+        }
+        else{
+          console.log(response.data);
+          alert("Sign-in failed. Please check your credentials."); // Show error alert
+        }
       })
       .catch(error => {
         console.error(error);
@@ -84,6 +100,13 @@ const SignInSignUp = () => {
           </label>
           <button type="button" onClick={handleSignin}>Sign In</button>
         </form>
+      </div>
+      {/* Add a button to navigate to the password change page */}
+      <div>
+        <h2>Password Change</h2>
+        <Link to="/update-pass">
+          <button type="button">Go to Password Change</button>
+        </Link>
       </div>
     </div>
   );

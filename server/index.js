@@ -49,7 +49,7 @@ app.post('/signup', (req, res) => {
                 return;
             }
 
-            res.send("Values inserted");
+            res.send("Sign-up successful");
         });
     });
 });
@@ -68,13 +68,30 @@ app.post('/signin', (req, res) => {
         else {
             res.send("no user found");
             return;
-            res.send(result);
         }
     })
     
 
     
 })
+app.post('/changepassword', (req, res) => {
+    const { email, newPassword } = req.body;
+    if (!email || !newPassword) {
+        res.send("All fields are required");
+        return;
+    }
+  
+    // Update the password
+    db.query('UPDATE customer SET password = ? WHERE email = ?', [newPassword, email], (updateErr, updateResult) => {
+      if (updateErr) {
+        console.log(updateErr);
+        res.status(500).send("Internal Server Error");
+        return;
+      }
+  
+      res.send("Password changed successfully");
+    });
+  });
 
 app.listen(3001, () => {
     console.log("Server started on port 3001");

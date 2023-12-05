@@ -6,6 +6,7 @@ import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import SignInSignUp from "./SignIn-Signup";
+import PasswordChange from "./update-pass";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/Signin-Signup" element={<SignInSignUp/>} />
+        <Route path="/update-pass" element={<PasswordChange/>}></Route>
       </Routes>
     </>
   );
