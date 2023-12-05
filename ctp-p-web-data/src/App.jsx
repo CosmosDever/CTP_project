@@ -8,19 +8,6 @@ import About from "./About";
 import SignInSignUp from "./SignIn-Signup";
 
 function App() {
-  const [count, setCount] = useState({});
-
-  const getAPI = async () => {
-    const response = await fetch("/api");
-    const data = await response.json();
-    setCount(data);
-  }
-
-  useEffect(() => {
-    getAPI();
-  })
-
-
   return (
     <>
       <Nav />
