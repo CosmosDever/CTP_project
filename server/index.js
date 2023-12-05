@@ -71,8 +71,6 @@ app.post('/signin', (req, res) => {
         }
     })
     
-
-    
 })
 app.post('/changepassword', (req, res) => {
     const { email, newPassword } = req.body;
@@ -80,18 +78,16 @@ app.post('/changepassword', (req, res) => {
         res.send("All fields are required");
         return;
     }
-  
     // Update the password
     db.query('UPDATE customer SET password = ? WHERE email = ?', [newPassword, email], (updateErr, updateResult) => {
-      if (updateErr) {
+        if (updateErr) {
         console.log(updateErr);
         res.status(500).send("Internal Server Error");
         return;
-      }
-  
-      res.send("Password changed successfully");
+        }
+        res.send("Password changed successfully");
     });
-  });
+});
 
 app.listen(3001, () => {
     console.log("Server started on port 3001");
