@@ -33,7 +33,7 @@ const Contact = () => {
     <div className='contactus'>
       <div className="container2">
         <div className="contact">Contact Us</div>
-        <p>Feel free to contact us anytime. We will get back to you as soon as we can!</p>
+        <div className="text">Feel free to contact us anytime. We will get back to you as soon as we can!</div>
 
         <div className="username">
           <div className="username-input">
