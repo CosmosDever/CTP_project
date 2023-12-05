@@ -28,7 +28,7 @@ const PasswordChange = () => {
   };
 
   return (
-    <div>
+    <div >
       <h2>Password Change</h2>
       <form>
         <label>

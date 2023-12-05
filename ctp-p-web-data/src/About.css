@@ -9,7 +9,7 @@ p {
     display: flex;
     justify-content: center;
     font-size: 60px;
-    /* margin-top: 10px; */
+    padding-top: 30px;
 }
 
 .about {
