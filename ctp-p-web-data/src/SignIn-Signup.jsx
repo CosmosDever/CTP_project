@@ -101,7 +101,6 @@ const SignInSignUp = () => {
           <button type="button" onClick={handleSignin}>Sign In</button>
         </form>
       </div>
-      {/* Add a button to navigate to the password change page */}
       <div>
         <h2>Password Change</h2>
         <Link to="/update-pass">
