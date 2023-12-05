@@ -9,11 +9,11 @@ import mem3 from './assets/mem3.jpg'
 const About = () => {
     return (
         <body>
-            <h1>About Us</h1>
+            <p>About Us</p>
                 <div className="about">
                     <img src={about1}/>
                     <p1>
-                        <div> <br /> We are a company or website. <br /> </div>
+                        <div>We are a company or website. <br /> </div>
                         <div>that is committed to providing hotel parking <br /> </div>
                         <div>reservation services to our customers <br /> </div>
                         <div>We have a comprehensive service <br /> </div>
@@ -27,7 +27,7 @@ const About = () => {
 
             <div className="mission">
                 <div className="textmiss">
-                <h2>Mission and Vision</h2>
+                <p8>Mission and Vision</p8>
                     <p2>
                         <div>Our mission is to provide quality <br /> </div>
                         <div>parking and cover the needs of all our <br /> </div>
@@ -42,7 +42,7 @@ const About = () => {
 
 
             <div className="member">
-                <h3>Our Team</h3>
+                <p9>Our Team</p9>
                 <div className="memberpic">       
                     <div className="mem1">
                         <img src={mem1}/>
