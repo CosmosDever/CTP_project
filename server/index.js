@@ -70,10 +70,10 @@ app.post('/signin', (req, res) => {
             return;
         }
     })
-    
 })
 app.post('/changepassword', (req, res) => {
     const { email, newPassword } = req.body;
+    // Check if email and new password are provided
     if (!email || !newPassword) {
         res.send("All fields are required");
         return;
