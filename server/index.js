@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const db = require("./database");
 const cors = require("cors");
-
 app.use(cors());
 app.use(express.json());
 
@@ -57,12 +56,13 @@ app.post('/signup', (req, res) => {
 //Sing-in
 app.post('/signin', (req, res) => {
     const { email, password } = req.body;
+    console.log(email, password);
     db.query('SELECT * FROM customer WHERE email = ? AND password = ?', [email, password], (err, result) => {
         if (err) {
             console.log(err);
         } 
         if (result.length > 0) {
-            res.send("Logged in");
+            res.send(result);
             return;
         }
         else {
@@ -88,8 +88,10 @@ app.post('/changepassword', (req, res) => {
         res.send("Password changed successfully");
     });
 });
-app.get ('/carparking', (req, res) => {
-    db.query("SELECT * FROM reservation WHERE customer_id = ?", (err, result) => {
+app.post ('/carparking', (req, res) => {
+    const {customer_id} = req.body;
+    console.log(customer_id);
+    db.query("SELECT * FROM reservation WHERE customer_id = ?",[customer_id],(err, result) => {
         if (err) {
             console.log(err);
         } else {
@@ -100,4 +102,3 @@ app.get ('/carparking', (req, res) => {
 app.listen(3001, () => {
     console.log("Server started on port 3001");
 })
-

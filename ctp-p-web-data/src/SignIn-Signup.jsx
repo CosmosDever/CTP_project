@@ -44,9 +44,14 @@ const SignInSignUp = () => {
   const handleSignin = () => {
     axios.post('http://localhost:3001/signin', signinData)
       .then(response => {
-        if(response.data=="Logged in"){
-          console.log(response.data);
+        if(response.data){
+          console.log(response.data[0].ID);
+          const customerID = response.data[0].ID;
           alert("Sign-in successful!");
+          localStorage.setItem("customerID", customerID);
+          console.log(signinData)
+          console.log(customerID)
+
         }
         else{
           console.log(response.data);
@@ -58,6 +63,7 @@ const SignInSignUp = () => {
         alert("Sign-in failed. Please check your credentials."); // Show error alert
       });
   };
+
   return (
     <div>
       <div>
@@ -98,7 +104,7 @@ const SignInSignUp = () => {
             Password:
             <input type="password" value={signinData.password} onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
           </label>
-          <button type="button" onClick={handleSignin}>Sign In</button>
+          <Link to = "/car-parking"><button type="button" onClick={() => handleSignin()}>Sign In</button></Link>
         </form>
       </div>
       <div>

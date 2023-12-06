@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
 const Carpark = () => {
   const [responseData, setResponseData] = useState(null);
-
+  const [customer_id] = useState({
+    customer_id :localStorage.getItem("customerID")
+  }); 
   const handleSubmit = () => {
-    axios.get('http://localhost:3001/carparking')
+    axios.post('http://localhost:3001/carparking',customer_id)
       .then(response => {
         setResponseData(response.data);
+        console.log(customer_id);
       })
       .catch(error => {
         console.error(error);
