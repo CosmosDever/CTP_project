@@ -44,7 +44,7 @@ const SignInSignUp = () => {
   const handleSignin = () => {
     axios.post('http://localhost:3001/signin', signinData)
       .then(response => {
-        if(response.data=="logged in"){
+        if(response.data=="Logged in"){
           console.log(response.data);
           alert("Sign-in successful!");
         }

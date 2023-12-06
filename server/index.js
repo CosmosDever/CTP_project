@@ -62,7 +62,7 @@ app.post('/signin', (req, res) => {
             console.log(err);
         } 
         if (result.length > 0) {
-            res.send("logged in");
+            res.send("Logged in");
             return;
         }
         else {
