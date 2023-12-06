@@ -89,7 +89,7 @@ app.post('/changepassword', (req, res) => {
     });
 });
 app.get ('/carparking', (req, res) => {
-    db.query("SELECT * FROM reservation", (err, result) => {
+    db.query("SELECT * FROM reservation WHERE customer_id = ?", (err, result) => {
         if (err) {
             console.log(err);
         } else {
