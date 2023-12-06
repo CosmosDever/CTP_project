@@ -7,7 +7,7 @@ import Contact from "./Contact";
 import About from "./About";
 import SignInSignUp from "./SignIn-Signup";
 import PasswordChange from "./update-pass";
-
+import Carpark from "./Carparkingfrom";
 function App() {
   return (
     <>
@@ -18,6 +18,8 @@ function App() {
         <Route path="/About" element={<About/>} />
         <Route path="/Signin-Signup" element={<SignInSignUp/>} />
         <Route path="/update-pass" element={<PasswordChange/>}></Route>
+        <Route path="/car-parking" element={<Carpark/>}></Route>
+  
       </Routes>
     </>
   );

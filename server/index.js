@@ -88,7 +88,15 @@ app.post('/changepassword', (req, res) => {
         res.send("Password changed successfully");
     });
 });
-
+app.get ('/carparking', (req, res) => {
+    db.query("SELECT * FROM reservation", (err, result) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.send(result);
+        }
+    })
+})
 app.listen(3001, () => {
     console.log("Server started on port 3001");
 })

@@ -14,7 +14,7 @@ function Home() {
             <body>
                 <ul className="carparkingbox">
                     <li className="carparkingButt">
-                        <Link to="/carparking" className="carpark">Car Parking</Link>
+                        <Link to="/car-parking" className="carpark">Car Parking</Link>
                     </li>
                 </ul>
                 <div class = "container">
