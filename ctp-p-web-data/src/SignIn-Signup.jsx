@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const SignInSignUp = () => {
   const [signupData, setSignupData] = useState({
-    ID: '',
     first_name: '',
     last_name: '',
     email: '',
@@ -44,18 +43,22 @@ const SignInSignUp = () => {
   const handleSignin = () => {
     axios.post('http://localhost:3001/signin', signinData)
       .then(response => {
-        if(response.data){
-          console.log(response.data[0].ID);
-          const customerID = response.data[0].ID;
-          alert("Sign-in successful!");
-          localStorage.setItem("customerID", customerID);
-          console.log(signinData)
-          console.log(customerID)
-
-        }
-        else{
+        if (response.data=="All fields are required") {
           console.log(response.data);
-          alert("Sign-in failed. Please check your credentials."); // Show error alert
+          alert("All fields are required."); // Show error alert
+          return;
+        }
+        else if (response.data == "no user found") {
+          console.log(response.data);
+          alert("no user found. Please check your credentials."); // Show error alert
+          return;
+        }
+
+        else if(response.data){
+          localStorage.setItem('customer_id', response.data[0].ID);
+          alert("Sign-in successful!");
+          console.log(response.data);
+          window.location.href = '/car-parking';
         }
       })
       .catch(error => {
@@ -104,7 +107,7 @@ const SignInSignUp = () => {
             Password:
             <input type="password" value={signinData.password} onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
           </label>
-          <Link to = "/car-parking"><button type="button" onClick={() => handleSignin()}>Sign In</button></Link>
+          <button type="button" onClick={() => handleSignin()}>Sign In</button>
         </form>
       </div>
       <div>

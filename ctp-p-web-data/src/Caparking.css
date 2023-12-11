@@ -1,0 +1,38 @@
+.c_reservationCard {
+    border-radius: 20px; /* Adjusted border-radius for a more subtle curve */
+    border: 2px solid #3498db; /* Added border color for a stylish look */
+    width: 400px;
+    height: auto;
+    display: flex;
+    margin: 100px 0 0 100px; /* Consolidated margin shorthand for better readability */
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow for depth */
+    background-color: #fff; /* Set background color to white for a clean look */
+}
+
+.c_reservationCard h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.confirm_button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.cancel_button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+

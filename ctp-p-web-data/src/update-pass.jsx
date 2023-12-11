@@ -5,7 +5,7 @@ import axios from 'axios';
 const PasswordChange = () => {
   const [passwordData, setPasswordData] = useState({
     email: '',
-    newPassword: '',
+    newPassword: ''
   });
 
   // Handle password change form submission
