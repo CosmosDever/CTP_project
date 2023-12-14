@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import "./SignIn-Signup.css";
 
 const SignInSignUp = () => {
   const [signupData, setSignupData] = useState({
@@ -68,54 +69,59 @@ const SignInSignUp = () => {
   };
 
   return (
-    <div>
-      <div>
+    <div className='all'>
+      <div className='signup'>
         <h2>Sign Up</h2>
         <form>
           <label>
-            First Name:
+            First Name<br/>
             <input type="text" value={signupData.first_name} onChange={(e) => setSignupData({ ...signupData, first_name: e.target.value })} />
           </label>
-          <label>
-            Last Name:
+          <label> <br/>
+            Last Name<br/>
             <input type="text" value={signupData.last_name} onChange={(e) => setSignupData({ ...signupData, last_name: e.target.value })} />
-          </label>
-          <label>
-            Email:
+          </label> 
+          <label> <br/>
+            Email<br/>
             <input type="email" value={signupData.email} onChange={(e) => setSignupData({ ...signupData, email: e.target.value })} />
           </label>
-          <label>
-            Password:
+          <label> <br/>
+            Password<br/>
             <input type="password" value={signupData.password} onChange={(e) => setSignupData({ ...signupData, password: e.target.value })} />
           </label>
-          <label>
-            Phone Number:
+          <label> <br/>
+            Phone Number<br/>
             <input type="text" value={signupData.phone_number} onChange={(e) => setSignupData({ ...signupData, phone_number: e.target.value })} />
-          </label>
-          <button type="button" onClick={handleSignup}>Sign Up</button>
+          </label><br/><br/>
+              <div>
+                <button type="button" onClick={handleSignup}>Sign Up</button>
+              </div>
         </form>
       </div>
-
-      <div>
-        <h2>Sign In</h2>
-        <form>
-          <label>
-            Email:
-            <input type="email" value={signinData.email} onChange={(e) => setSigninData({ ...signinData, email: e.target.value })} />
-          </label>
-          <label>
-            Password:
-            <input type="password" value={signinData.password} onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
-          </label>
-          <button type="button" onClick={() => handleSignin()}>Sign In</button>
-        </form>
-      </div>
-      <div>
-        <h2>Password Change</h2>
-        <Link to="/update-pass">
-          <button type="button">Go to Password Change</button>
-        </Link>
-      </div>
+        <div className='signin-change'>
+          <div className='signin'>
+            <h2>Sign In</h2>
+            <form>
+              <label>
+                Email <br/>
+                <input type="email" value={signinData.email} onChange={(e) => setSigninData({ ...signinData, email: e.target.value })} />
+              </label>
+              <label><br/>
+                Password<br/>
+                <input type="password" value={signinData.password} onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
+              </label><br/><br/>
+              <button type="button" onClick={() => handleSignin()}>Sign In</button>
+            </form>
+          </div>
+          <div className='change'>
+            <h2>Password Change</h2>
+              <div>
+                <Link to="/update-pass">
+                  <button type="button">Go to Password Change</button>
+                </Link>
+              </div>
+          </div>
+        </div>
     </div>
   );
 };
