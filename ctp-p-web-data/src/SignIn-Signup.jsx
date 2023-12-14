@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import './SignIn-Signup.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const SignInSignUp = () => {
   const [email, setEmail] = useState('');
@@ -37,14 +40,19 @@ const SignInSignUp = () => {
   };
 
   return (
-    <div>
+    <div className='sign-in'>
       <h1>Sign In</h1>
       <form onSubmit={handleSubmit}>
-        <label>Email:</label>
-        <input type="email" value={email} onChange={handleEmailChange} required />
+        <div className='mail'>
+          <div className='mail-logo-signin'>
+            <FontAwesomeIcon icon={faEnvelope} className="mail-logo" />
+          </div>
+          <input className = "mail-input-signin" type="email" value={email} placeholder="Enter your E-mail" onChange={handleEmailChange} required />
+        </div> 
+
         <br />
-        <label>Password:</label>
-        <input type="password" value={password} onChange={handlePasswordChange} required />
+
+        <input className = "password-input" type="password" value={password} placeholder="Enter your Password" onChange={handlePasswordChange} required />
         <br />
         <button type="submit">Sign In</button>
       </form>
