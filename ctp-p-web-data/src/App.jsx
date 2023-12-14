@@ -6,21 +6,9 @@ import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import SignInSignUp from "./SignIn-Signup";
-
+import PasswordChange from "./update-pass";
+import Carpark from "./Carparkingfrom";
 function App() {
-  const [count, setCount] = useState({});
-
-  const getAPI = async () => {
-    const response = await fetch("/api");
-    const data = await response.json();
-    setCount(data);
-  }
-
-  useEffect(() => {
-    getAPI();
-  })
-
-
   return (
     <>
       <Nav />
@@ -29,6 +17,9 @@ function App() {
         <Route path="/Contact" element={<Contact/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/Signin-Signup" element={<SignInSignUp/>} />
+        <Route path="/update-pass" element={<PasswordChange/>}></Route>
+        <Route path="/car-parking" element={<Carpark/>}></Route>
+  
       </Routes>
     </>
   );

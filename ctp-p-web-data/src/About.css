@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
-h1 {
+
+p {
     display: flex;
     justify-content: center;
-    font-size: 45px; 
+    font-size: 60px;
+    padding-top: 30px;
 }
 
 .about {
@@ -17,6 +19,7 @@ h1 {
     flex-direction: row;
     gap: 50px;
     margin-top: 30px;
+    
     
 }
 
@@ -31,6 +34,7 @@ p1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .mission {
@@ -49,7 +53,7 @@ p1 {
     align-items: center;
 }
 
-h2 {
+p8 {
     font-size: 40px;
 }
 
@@ -60,9 +64,10 @@ p2 {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    gap: 5px;
 }
 
-h3 {
+p9 {
     display: flex;
     justify-content: center;
     font-size: 40px;
