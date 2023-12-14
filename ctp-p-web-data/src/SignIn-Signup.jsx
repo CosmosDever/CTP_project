@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-import './SignIn-Signup.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-=======
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
->>>>>>> 627bd4538e720fd1351f11371b2f29b06cce4c6d
 
 const SignInSignUp = () => {
   const [signupData, setSignupData] = useState({
@@ -75,24 +68,6 @@ const SignInSignUp = () => {
   };
 
   return (
-<<<<<<< HEAD
-    <div className='sign-in'>
-      <h1>Sign In</h1>
-      <form onSubmit={handleSubmit}>
-        <div className='mail'>
-          <div className='mail-logo-signin'>
-            <FontAwesomeIcon icon={faEnvelope} className="mail-logo" />
-          </div>
-          <input className = "mail-input-signin" type="email" value={email} placeholder="Enter your E-mail" onChange={handleEmailChange} required />
-        </div> 
-
-        <br />
-
-        <input className = "password-input" type="password" value={password} placeholder="Enter your Password" onChange={handlePasswordChange} required />
-        <br />
-        <button type="submit">Sign In</button>
-      </form>
-=======
     <div>
       <div>
         <h2>Sign Up</h2>
@@ -141,7 +116,6 @@ const SignInSignUp = () => {
           <button type="button">Go to Password Change</button>
         </Link>
       </div>
->>>>>>> 627bd4538e720fd1351f11371b2f29b06cce4c6d
     </div>
   );
 };
