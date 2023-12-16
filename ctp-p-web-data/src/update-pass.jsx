@@ -44,7 +44,7 @@ const PasswordChange = () => {
             <br/>New Password <br/>
             <input className='newpassword'
               type="password" 
-              placeholder="Enter your password"
+              placeholder="Enter your new password"
               value={passwordData.newPassword} 
               onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })} />
           </label> <br/>
