@@ -22,7 +22,7 @@ function Home() {
                         <div><img src="https://img.freepik.com/premium-photo/top-down-aerial-view-many-cars-parking-lot-supermarket-sale-car-dealer-market_127089-10749.jpg"/></div>
                         {/* <div><img src={parking}/></div> */}
                         <div class = "text">
-                                <p>Hotel Parking Booking</p>
+                                <p1>Hotel Parking Booking</p1>
                                 <p>
                                     <div>Hotel parking booking websites allow you to pre-book<br /></div>
                                     <div>parking at your hotel. Go through the search, reserve,<br /></div>
