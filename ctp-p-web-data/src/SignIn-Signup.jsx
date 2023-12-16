@@ -76,13 +76,16 @@ const SignInSignUp = () => {
           <label>
             First Name<br/>
             <input className='blank-space'
-              type="text" value={signupData.first_name}   
+              type="text" 
+              placeholder="Enter your first name"
+              value={signupData.first_name}   
               onChange={(e) => setSignupData({ ...signupData, first_name: e.target.value })} />
           </label>
           <label> <br/>
             Last Name<br/>
             <input className='blank-space'
               type="text"
+              placeholder="Enter your last name"
               value={signupData.last_name} 
               onChange={(e) => setSignupData({ ...signupData, last_name: e.target.value })} />
           </label> 
@@ -90,6 +93,7 @@ const SignInSignUp = () => {
             Email<br/>
             <input className='blank-space'
               type="email" 
+              placeholder="Enter your E-mail"
               value={signupData.email} 
               onChange={(e) => setSignupData({ ...signupData, email: e.target.value })} />
           </label>
@@ -97,13 +101,16 @@ const SignInSignUp = () => {
             Password<br/>
             <input className='blank-space'
               type="password" 
+              placeholder="Enter your password"
               value={signupData.password} 
               onChange={(e) => setSignupData({ ...signupData, password: e.target.value })} />
           </label>
           <label> <br/>
             Phone Number<br/>
             <input className='blank-space'
-              type="text" value={signupData.phone_number} 
+              type="text" 
+              placeholder="Enter your phone number"
+              value={signupData.phone_number} 
               onChange={(e) => setSignupData({ ...signupData, phone_number: e.target.value })} />
           </label><br/><br/>
               <div>
@@ -119,6 +126,7 @@ const SignInSignUp = () => {
                 Email <br/>
                 <input className='blank-space'
                   type="email" 
+                  placeholder="Enter your E-mail"
                   value={signinData.email} 
                   onChange={(e) => setSigninData({ ...signinData, email: e.target.value })} />
               </label>
@@ -126,6 +134,7 @@ const SignInSignUp = () => {
                 Password<br/>
                 <input className='blank-space'
                   type="password" 
+                  placeholder="Enter your password"
                   value={signinData.password} 
                   onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
               </label><br/><br/>

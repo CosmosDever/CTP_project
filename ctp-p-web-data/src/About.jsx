@@ -19,14 +19,14 @@ const About = () => {
                         <p>About Us</p>
                         {/* <img src={about1}/> */}
                         <p1>
-                            <div>We are a company or website. <br /> </div>
+                            <div>We are a company or website<br /> </div>
                             <div>that is committed to providing hotel parking <br /> </div>
-                            <div>reservation services to our customers <br /> </div>
-                            <div>We have a comprehensive service <br /> </div>
-                            <div>Our customers' confidence and <br /> </div>
-                            <div>comfort are of the utmost importance to us. <br />  </div>
-                            <div>And we strive to make the parking booking <br /> </div>
-                            <div>process as easy and quick as possible.</div>
+                            <div>reservation services to our customers. <br /> </div>
+                            <div>We have a comprehensive service. <br /> </div>
+                            <div>Our customers' confidence and comfort<br /> </div>
+                            <div>are of the utmost importance to us. <br />  </div>
+                            <div>And we strive to make the parking booking process<br /> </div>
+                            <div>as easy and quick as possible.</div>
                         </p1>
                     </div>
                     <div className="all-carparking"> 
@@ -43,11 +43,11 @@ const About = () => {
                 <div className="textmiss">
                 <p8>Mission and Vision</p8>
                     <p2>
-                        <div>Our mission is to provide quality <br /> </div>
-                        <div>parking and cover the needs of all our <br /> </div>
-                        <div>customers. We strive to make booking <br /> </div>
-                        <div>parking quick and easy. and believes <br /> </div>
-                        <div>that parking should be an important part <br /> </div>
+                        <div>Our mission is to provide quality parking <br /> </div>
+                        <div>and cover the needs of all our customers.<br /> </div>
+                        <div>We strive to make booking parking<br /> </div>
+                        <div>quick and easy. And believes that<br /> </div>
+                        <div>parking should be an important part <br /> </div>
                         <div>of a safe and simple journey.<br /> </div>
                     </p2>
                 </div>

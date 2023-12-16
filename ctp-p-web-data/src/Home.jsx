@@ -10,27 +10,31 @@ function Home() {
     
     return (
         <>
+            <div className="homepic">  </div>
             <header>
             </header>
             <body>
+                
                 <ul className="carparkingbox">
+                    <h1>Welcome to Centerpark</h1>
+                    <h2>We'll help you find a parking space.</h2>
                     <li className="carparkingButt">
-                        <Link to="/car-parking" className="carpark">Car Parking</Link>
+                        <Link to="/car-parking" className="carpark">Book your parking space now!</Link>
                     </li>
                 </ul>
                 <div class = "container">
                         <div><img src="https://img.freepik.com/premium-photo/top-down-aerial-view-many-cars-parking-lot-supermarket-sale-car-dealer-market_127089-10749.jpg"/></div>
-                        {/* <div><img src={parking}/></div> */}
                         <div class = "text">
                                 <p1>Hotel Parking Booking</p1>
-                                <p>
+                                <p5>
                                     <div>Hotel parking booking websites allow you to pre-book<br /></div>
-                                    <div>parking at your hotel. Go through the search, reserve,<br /></div>
+                                    <div>parking at your hotel. Go through the search, reserve<br /></div>
                                     <div>and confirmation steps to make parking reservations<br /></div>
                                     <div>convenient and time-saving.</div>
-                                </p>
+                                </p5>
                         </div>
                     </div>
+                    <div className="parking"><img src={parking}/></div>
             </body>
         </>
     );

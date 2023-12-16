@@ -1,9 +1,10 @@
 *
 {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-
+    font-family: 'PT Serif', serif;
+    /* font-family: 'PT Sans', sans-serif; */
 }
+
 .navbutton{
     width: 80px;
     height: 50px;
@@ -13,7 +14,9 @@
     align-items: center;
     left: 884px;
     border-radius: 16px;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    /* font-family: 'PT Sans', sans-serif; */
+
 }
 
 .navbutton_contact{
@@ -25,7 +28,8 @@
     align-items: center;
     left: 884px;
     border-radius: 16px;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    color: #d6eaff;
 }
 
 .navbutton_about{
@@ -37,7 +41,8 @@
     align-items: center;
     left: 884px;
     border-radius: 16px;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    color: #d6eaff;
 }
 
 .navbutton_sign{
@@ -49,7 +54,8 @@
     align-items: center;
     left: 884px;
     border-radius: 16px;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    color: #d6eaff;
 }
 .navbox{
     display: flex;
@@ -67,7 +73,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #005593;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 .logo{
     margin: 1%;
@@ -89,11 +95,18 @@
 } */
 
 .navbutton a ,.navbutton_sign a ,.navbutton_about a ,.navbutton_contact a {
-    color: black;
+    color: #d6eaff;
     text-decoration: none;
+    font-size: 18px;
+    /* font-weight: bold; */
 }
 
-
+.navbutton a:hover  ,.navbutton_sign a:hover  ,.navbutton_about a:hover  ,.navbutton_contact a:hover {
+    color: white;
+    transform: scale(1.2);
+    text-shadow: none;
+    /* font-weight: bold; */
+}
 
 .logo img {
     width: 70px;
@@ -104,3 +117,4 @@ li img {
     width: 30px;
     height: auto;
 }
+

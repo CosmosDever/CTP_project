@@ -19,6 +19,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 
 .about {
@@ -26,7 +27,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 100px;
+    gap: 70px;
     margin-top: 150px;
     color: #212427;
     /* background-color: #005593; */
@@ -50,7 +51,8 @@ p {
     align-items: center;
     margin-bottom: 50px;
     margin-top: 30px;
-    margin-left: 30px;
+    margin-left: 35px;
+    
 }
 
 .all-carparking {
@@ -96,6 +98,7 @@ p1 {
     width: 100%;
     height: 500px;
     color: #212427;
+    
 }
 
 .mission img {
@@ -122,6 +125,7 @@ p8 {
     justify-content: center;
     align-items: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
 p2 {

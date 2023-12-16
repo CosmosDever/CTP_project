@@ -36,6 +36,7 @@ const PasswordChange = () => {
             Email <br/>
             <input className='newemail'
               type="email" 
+              placeholder="Enter your E-mail"
               value={passwordData.email} 
               onChange={(e) => setPasswordData({ ...passwordData, email: e.target.value })} />
           </label>
@@ -43,6 +44,7 @@ const PasswordChange = () => {
             <br/>New Password <br/>
             <input className='newpassword'
               type="password" 
+              placeholder="Enter your password"
               value={passwordData.newPassword} 
               onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })} />
           </label> <br/>
