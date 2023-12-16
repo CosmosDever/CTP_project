@@ -75,26 +75,39 @@ const SignInSignUp = () => {
         <form>
           <label>
             First Name<br/>
-            <input type="text" value={signupData.first_name} onChange={(e) => setSignupData({ ...signupData, first_name: e.target.value })} />
+            <input className='blank-space'
+              type="text" value={signupData.first_name}   
+              onChange={(e) => setSignupData({ ...signupData, first_name: e.target.value })} />
           </label>
           <label> <br/>
             Last Name<br/>
-            <input type="text" value={signupData.last_name} onChange={(e) => setSignupData({ ...signupData, last_name: e.target.value })} />
+            <input className='blank-space'
+              type="text"
+              value={signupData.last_name} 
+              onChange={(e) => setSignupData({ ...signupData, last_name: e.target.value })} />
           </label> 
           <label> <br/>
             Email<br/>
-            <input type="email" value={signupData.email} onChange={(e) => setSignupData({ ...signupData, email: e.target.value })} />
+            <input className='blank-space'
+              type="email" 
+              value={signupData.email} 
+              onChange={(e) => setSignupData({ ...signupData, email: e.target.value })} />
           </label>
           <label> <br/>
             Password<br/>
-            <input type="password" value={signupData.password} onChange={(e) => setSignupData({ ...signupData, password: e.target.value })} />
+            <input className='blank-space'
+              type="password" 
+              value={signupData.password} 
+              onChange={(e) => setSignupData({ ...signupData, password: e.target.value })} />
           </label>
           <label> <br/>
             Phone Number<br/>
-            <input type="text" value={signupData.phone_number} onChange={(e) => setSignupData({ ...signupData, phone_number: e.target.value })} />
+            <input className='blank-space'
+              type="text" value={signupData.phone_number} 
+              onChange={(e) => setSignupData({ ...signupData, phone_number: e.target.value })} />
           </label><br/><br/>
               <div>
-                <button type="button" onClick={handleSignup}>Sign Up</button>
+                <button className='signup-button' type="button" onClick={handleSignup}>Sign Up</button>
               </div>
         </form>
       </div>
@@ -104,20 +117,28 @@ const SignInSignUp = () => {
             <form>
               <label>
                 Email <br/>
-                <input type="email" value={signinData.email} onChange={(e) => setSigninData({ ...signinData, email: e.target.value })} />
+                <input className='blank-space'
+                  type="email" 
+                  value={signinData.email} 
+                  onChange={(e) => setSigninData({ ...signinData, email: e.target.value })} />
               </label>
               <label><br/>
                 Password<br/>
-                <input type="password" value={signinData.password} onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
+                <input className='blank-space'
+                  type="password" 
+                  value={signinData.password} 
+                  onChange={(e) => setSigninData({ ...signinData, password: e.target.value })} />
               </label><br/><br/>
-              <button type="button" onClick={() => handleSignin()}>Sign In</button>
+              <div>
+                <button className='signin-button' type="button" onClick={() => handleSignin()}>Sign In</button>
+              </div>
             </form>
           </div>
           <div className='change'>
             <h2>Password Change</h2>
               <div>
                 <Link to="/update-pass">
-                  <button type="button">Go to Password Change</button>
+                  <button className='change-button' type="button">Go to Password Change</button>
                 </Link>
               </div>
           </div>

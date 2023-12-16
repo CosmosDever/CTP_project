@@ -2,6 +2,7 @@ import "./Home.css";
 import { Link } from "react-router-dom"
 import { useState, useEffect } from "react";
 import axios from "axios";
+import parking from './assets/parking.png'
 
 
 
@@ -19,6 +20,7 @@ function Home() {
                 </ul>
                 <div class = "container">
                         <div><img src="https://img.freepik.com/premium-photo/top-down-aerial-view-many-cars-parking-lot-supermarket-sale-car-dealer-market_127089-10749.jpg"/></div>
+                        {/* <div><img src={parking}/></div> */}
                         <div class = "text">
                                 <p>Hotel Parking Booking</p>
                                 <p>
