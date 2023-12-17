@@ -34,7 +34,7 @@ function Home() {
                                 </p5>
                         </div>
                     </div>
-                    <div className="parking"><img src={parking}/></div>
+                    <div className="parking1"><img src={parking}/></div>
             </body>
         </>
     );

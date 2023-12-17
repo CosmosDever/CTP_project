@@ -160,12 +160,12 @@ h2{
     display: none;
 } */
 
-.parking img {
+.parking1 img {
     width: 230px;
     height: 230px;
 }
 
-.parking {
+.parking1 {
     position: absolute;
     top: 920px;
     left: 1275px;
