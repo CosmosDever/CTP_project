@@ -92,7 +92,7 @@ const Contact = () => {
         <div className='backgroud-info-1'></div>
         <div className='backgroud-info-2'></div>
         <div className='text-info'>
-          <p>Info</p>
+          <p1>Info</p1>
           <div className='facebook-logo'>
             <img src={Facebook_Logo} alt="facebooklogo" className='facebook-logo'/>
             <div className='facebook-text'>CenterPlaceParking</div>

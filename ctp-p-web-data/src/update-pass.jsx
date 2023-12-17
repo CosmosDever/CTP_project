@@ -1,6 +1,7 @@
 // In your React component
 import React, { useState } from 'react';
 import axios from 'axios';
+import "./update-pass.css";
 
 const PasswordChange = () => {
   const [passwordData, setPasswordData] = useState({
@@ -28,19 +29,29 @@ const PasswordChange = () => {
   };
 
   return (
-    <div >
-      <h2>Password Change</h2>
-      <form>
-        <label>
-          Email:
-          <input type="email" value={passwordData.email} onChange={(e) => setPasswordData({ ...passwordData, email: e.target.value })} />
-        </label>
-        <label>
-          New Password:
-          <input type="password" value={passwordData.newPassword} onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })} />
-        </label>
-        <button type="button" onClick={handlePasswordChange}>Change Password</button>
-      </form>
+    <div className='form'>
+      <h2>Password Change <br/></h2>
+        <form>
+          <label className='text'>
+            Email <br/>
+            <input className='newemail'
+              type="email" 
+              placeholder="Enter your E-mail"
+              value={passwordData.email} 
+              onChange={(e) => setPasswordData({ ...passwordData, email: e.target.value })} />
+          </label>
+          <label className='text'>
+            <br/>New Password <br/>
+            <input className='newpassword'
+              type="password" 
+              placeholder="Enter your new password"
+              value={passwordData.newPassword} 
+              onChange={(e) => setPasswordData({ ...passwordData, newPassword: e.target.value })} />
+          </label> <br/>
+          <button className='changebutton'
+            type="button"   
+            onClick={handlePasswordChange}>Change Password</button>
+        </form>
     </div>
   );
 };

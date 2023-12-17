@@ -6,10 +6,20 @@
 
 
 p {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 45px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 50px;
+    width: 270px;
+    height: 70px;
     display: flex;
     justify-content: center;
-    font-size: 60px;
-    padding-top: 30px;
+    align-items: center;
+    font-weight: bold;
 }
 
 .about {
@@ -17,10 +27,16 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 50px;
-    margin-top: 30px;
-    
-    
+    gap: 70px;
+    margin-top: 150px;
+    color: #212427;
+    /* background-color: #005593; */
+    background: rgb(180,217,254);
+    background: linear-gradient(90deg, rgba(180,217,254,1) 0%, rgba(0,85,147,1) 100%);
+    /* background-color: white; */
+    width: 100%;
+    height: 460px;
+    /* opacity: 0.9; */
 }
 
 .about img {
@@ -28,8 +44,43 @@ p {
     height: 400px;
 }
 
+.textabout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-left: 35px;
+    
+}
+
+.all-carparking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+    gap: 30px;
+   
+
+}
+
+.all-carparking img {
+    width: 230px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    margin-left: 15px;
+}
+
+.carparking2 {
+    margin-top: 100px;
+
+}
+
 p1 {
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -44,6 +95,15 @@ p1 {
     flex-direction: row;
     gap: 50px;
     margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    color: #212427;
+    
+}
+
+.mission img {
+    width: 650px;
+    height: 400px;
 }
 
 .textmiss {
@@ -54,11 +114,22 @@ p1 {
 }
 
 p8 {
-    font-size: 40px;
+    font-size: 45px;
+    background: rgb(226,164,76);
+    background: linear-gradient(90deg, rgba(226,164,76,1) 50%, rgba(225,96,40,1) 100%);
+    padding: 10px;
+    border-radius: 50px;
+    width: 450px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
 p2 {
-    font-size: 30px;
+    font-size: 27px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -70,12 +141,16 @@ p2 {
 p9 {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 40px;
     margin-top: 30px;
+    font-weight: bold;
+    color: #212427;
+
 }
 
 .member {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .memberpic {
     display: flex;
@@ -92,3 +167,5 @@ p9 {
     border-radius: 50%;
     margin-bottom: 60px;
 }
+
+
