@@ -192,10 +192,8 @@
 .text-info p1 {
     font-size: 45px;
     width: 700px;
-    height: 700px;
     position: absolute;
-    top: -330px;
-    left: -260px;
+    left: -255px;
     margin-top: 140px;
     /* margin-left: 50px; */
     z-index: 4;

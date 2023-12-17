@@ -34,7 +34,6 @@ const Contact = () => {
       <div className="container2">
         <div className="contact">Contact Us</div>
         <div className="text">Feel free to contact us anytime. We will get back to you as soon as we can!</div>
-
         <div className="username">
           <div className="username-input">
             <label className="label-user" htmlFor="username"></label>

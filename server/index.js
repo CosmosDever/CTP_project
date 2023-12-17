@@ -141,7 +141,7 @@ app.post('/carparking',(req, res) => {
     });
 });
 app.post ('/cancel', (req, res) => {
-    const { reservation_id } = req.body;
+    const { reservation_id ,space_id} = req.body;
     if (reservation_id){
         db.query("delete from reservation where ID = ?", [reservation_id], (err, result) => {
             if (err) {
@@ -150,6 +150,12 @@ app.post ('/cancel', (req, res) => {
                 res.send("Reservation cancelled successfully");
             }
         })
+        db.query("UPDATE parkingspace SET car_vin = Null, status = 'Vacant' WHERE ID = ?", [space_id], (err, result) => {
+            if (err) {
+                console.log(err);
+            } 
+        });
+
     }
     else(
         console.log("No reservation found")

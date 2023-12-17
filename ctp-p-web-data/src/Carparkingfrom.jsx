@@ -17,6 +17,9 @@ const Carpark = () => {
       .then(response => {
         console.log(response.data);
         localStorage.setItem('reservation_id', response.data[0].ID);
+        localStorage.setItem('space_id', response.data[0].parking_id);
+        console.log(localStorage.getItem('reservation_id'));
+        console.log(localStorage.getItem('space_id'));
         setResponseData(response.data);
       })
       
@@ -33,11 +36,13 @@ const Carpark = () => {
 
 
 
-  const [reservation_id ] = useState({
-    reservation_id : String(parseInt(localStorage.getItem('reservation_id'))+1)
+  const [canceldata ] = useState({
+    reservation_id : String(parseInt(localStorage.getItem('reservation_id'))+1),
+    space_id : localStorage.getItem('space_id'),   
+    
   });
   const handlecancel= ()=>{
-    axios.post('http://localhost:3001/cancel',reservation_id)
+    axios.post('http://localhost:3001/cancel',canceldata)
       .then(response => {
         if (response.data == "Reservation cancelled successfully") {
           window.location.href = '/car-parking';
@@ -152,12 +157,12 @@ const Carpark = () => {
               ))}
             </ul>
             <div className='buttons'>
-              <div className='confirm_button'>
-                <Link to="/"> <button type="button">confirm</button></Link>
+              <div>
+                <Link to="/"> <button type="button" className='confirm_button'>confirm</button></Link>
               </div>
 
-              <div className='cancel_button'>
-                <button type="button" onClick={handlecancel}>cancel</button>
+              <div>
+                <button type="button"  className='cancel_button' onClick={handlecancel}>cancel</button>
               </div>
 
             </div>

@@ -143,6 +143,7 @@ h2{
 
 
 .carpark {
+    font-size: 27px;
     text-decoration: none;
     color: #212427;
 }
@@ -161,6 +162,7 @@ h2{
 } */
 
 .parking1 img {
+    margin-top: 25px;
     width: 230px;
     height: 230px;
 }
