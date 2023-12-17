@@ -124,7 +124,7 @@ app.post('/carparking',(req, res) => {
                             if (err) {
                                 console.log(err);
                             } else {
-                                db.query("select reservation.ID,CONCAT(first_name, ' ', last_name) as customer_name, room_id, car_vin , parking_id, book_date FROM customer join reservation on customer.ID= reservation.customer_id where customer.ID =?;", [customer_id], (err, result) => {
+                                db.query("select MAX(reservation.ID) as reservation_id,CONCAT(first_name, ' ', last_name) as customer_name, room_id, car_vin , parking_id, book_date FROM customer join reservation on customer.ID= reservation.customer_id where customer.ID =?;", [customer_id], (err, result) => {
                                     if (err) {
                                         console.log(err);
                                     } else {
