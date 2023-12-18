@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./Caparking.css";
 import { Link } from 'react-router-dom';
 import car_logo from './assets/car.png'
+import Swal from 'sweetalert2'
 const Carpark = () => {
   const [responseData, setResponseData] = useState(null);
   const [data_park , setdata_park] = useState({
@@ -12,14 +13,30 @@ const Carpark = () => {
     room_key: '', 
     book_date: ''
   }); 
+  const [canceldata , setcanceldata] = useState({
+    re_id: '', 
+    sp_id: ''
+  });
   const handlesubmit=  ()=>{
     axios.post('http://localhost:3001/carparking',data_park)
       .then(response => {
+        if(response.data=="All fields are required"){
+          console.log(response.data);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "All fields are required.",
+          });
+        }
         console.log(response.data);
-        localStorage.setItem('reservation_id', response.data[0].ID);
-        localStorage.setItem('space_id', response.data[0].parking_id);
-        console.log(localStorage.getItem('reservation_id'));
-        console.log(localStorage.getItem('space_id'));
+        localStorage.setItem('parking_id', response.data[0].parking_id);
+        console.log(response.data[0].reservation_id);
+        console.log(response.data[0].parking_id);
+        setcanceldata({
+          ...canceldata,
+          re_id: response.data[0].reservation_id,
+          sp_id: response.data[0].parking_id
+        });
         setResponseData(response.data);
       })
       
@@ -28,31 +45,40 @@ const Carpark = () => {
       });
   }
 
-  const spID = data_park.space_id;
-  console.log(spID)
   const shouldShowCar = (slotNumber) => {
+    
     return parseInt(data_park.space_id) === slotNumber;
   };
 
 
-
-  const [canceldata ] = useState({
-    reservation_id : String(parseInt(localStorage.getItem('reservation_id'))+1),
-    space_id : localStorage.getItem('space_id'),   
-    
-  });
+  
   const handlecancel= ()=>{
     axios.post('http://localhost:3001/cancel',canceldata)
       .then(response => {
+        
         if (response.data == "Reservation cancelled successfully") {
           window.location.href = '/car-parking';
           console.log(response.data);
         }
       })
+        
       .catch(error => {
         console.error(error);
       });
 
+  }
+  const handleconfirm = ()=>{
+    Swal.fire({
+      title: "Ok!",
+      text: "Reservation confirmed!",
+      icon: "success",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = '/';
+      }
+    });
+
+      
   }
 
 //------------------------------------------------------------------------
@@ -93,27 +119,28 @@ const Carpark = () => {
   return (
     <div className='parking' >
       <div className='dashboard'>
-        <div className='new-car-btn'>Slot management</div>
-        <label className='label-parking-1'>
-          Room key:
-              <input type="text" className="room-input" placeholder='Room key:' value={data_park.room_key} onChange={(e) => setdata_park({ ...data_park, room_key: e.target.value })} />
-        </label>
-        <label className='label-parking'> 
-              Car VIN:
-              <input type="text" className='car-vin' placeholder='Car VIN:' value={data_park.car_vin} onChange={(e) => setdata_park({ ...data_park, car_vin: e.target.value })} />
-        </label>
-        <label className='label-parking'>
-              Book Date:
-              <input type="date" className='book-date' value={data_park.book_date} onChange={(e) => setdata_park({ ...data_park, book_date: e.target.value })} />
-        </label>
-        <label className='label-parking'>
-              Space ID:
-              <input type="text" className='space-id' placeholder='Space ID:' value={data_park.space_id} onChange={(e) => setdata_park({ ...data_park, space_id: e.target.value })} />
-        </label>
+        <div className='parking-form'>
+          <label className='label-parking-1'>
+                Room key:
+                <input type="text" className="room-input" placeholder='Room key:' value={data_park.room_key} onChange={(e) => setdata_park({ ...data_park, room_key: e.target.value })} />
+          </label>
+          <label className='label-parking'> 
+                Car VIN:
+                <input type="text" className='car-vin' placeholder='Car VIN:' value={data_park.car_vin} onChange={(e) => setdata_park({ ...data_park, car_vin: e.target.value })} />
+          </label>
+          <label className='label-parking'>
+                Book Date:
+                <input type="date" className='book-date' value={data_park.book_date} onChange={(e) => setdata_park({ ...data_park, book_date: e.target.value })} />
+          </label>
+          <label className='label-parking'>
+                Space ID:
+                <input type="text" className='space-id' placeholder='Space ID:' value={data_park.space_id} onChange={(e) => setdata_park({ ...data_park, space_id: e.target.value })} />
+          </label>
+        </div>
       
 
         
-        {responseData && responseData.length > 0 && (
+        {responseData && responseData[0]!=="All fields are required" && (
           <div className='c_reservationCard'>
             <h2>Confrim Booking</h2>
             <ul>
@@ -158,7 +185,7 @@ const Carpark = () => {
             </ul>
             <div className='buttons'>
               <div>
-                <Link to="/"> <button type="button" className='confirm_button'>confirm</button></Link>
+                <button type="button" className='confirm_button' onClick={handleconfirm}>confirm</button>
               </div>
 
               <div>
@@ -171,6 +198,7 @@ const Carpark = () => {
         )}
       
         
+      <div className='g-floor'>
       <div className='floor'>Floor:</div>
       <div className='new-car-entry'>
         <div onClick={() => handleLayerChange(1)} id="slot1" className={currentLayer === 1 ? 'active-button' : ''}>1</div>
@@ -179,6 +207,7 @@ const Carpark = () => {
         <div onClick={() => handleLayerChange(4)} id="slot4" className={currentLayer === 4 ? 'active-button' : ''}>4</div>
         <div onClick={() => handleLayerChange(5)} id="slot5" className={currentLayer === 5 ? 'active-button' : ''}>5</div>
         <div onClick={() => handleLayerChange(6)} id="slot6" className={currentLayer === 6 ? 'active-button' : ''}>6</div>
+      </div>
       </div>
 
               
@@ -209,7 +238,6 @@ const Carpark = () => {
               </div>
             </>
           ) : renderLayer(currentLayer)}
-         
         </div>
 
 

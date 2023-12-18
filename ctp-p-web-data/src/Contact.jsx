@@ -6,6 +6,7 @@ import Facebook_Logo from './assets/Facebook_Logo.png';
 import mail_logo from './assets/mail_logo.png';
 import phone_logo from './assets/Phone_logo.png';
 import clock_logo from './assets/clock_logo.png';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
   // State for the username and email
@@ -27,7 +28,15 @@ const Contact = () => {
   const handlePhoneChange = (e) => {
     setPhone(e.target.value);
   };
-  
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    Swal.fire({
+      title: "Ok!",
+      text: "we will get back to you as soon as we can!",
+      icon: "success"
+    });
+    console.log(`Username: ${username}, Email: ${mail}, Phone: ${phone}`);
+  }
 
   return (
     <div className='contactus'>
@@ -83,7 +92,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <button id="sendButton" className='send-button'>Send</button>
+          <button id="sendButton" className='send-button' onClick={handleFormSubmit}>Send</button>
         </div>
       </div>
       

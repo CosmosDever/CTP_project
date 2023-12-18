@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./update-pass.css";
+import Swal from 'sweetalert2'
 
 const PasswordChange = () => {
   const [passwordData, setPasswordData] = useState({
@@ -15,10 +16,18 @@ const PasswordChange = () => {
       .then(response => {
         console.log(response.data);
         if(response.data=="Password changed successfully"){
-            alert("Password changed successfully!");
+          Swal.fire({
+            title: "Ok!",
+            text: "Password changed successfully!",
+            icon: "success"
+          });
         }
         else{
-            alert("Failed to change password. Please check your credentials."); // Show error alert
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Failed to change password. Please check your credentials.",
+          });
         }
         // You can handle success here
       })

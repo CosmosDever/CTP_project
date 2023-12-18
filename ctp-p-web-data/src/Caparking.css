@@ -49,52 +49,48 @@
 }
 
 .room-input {
-
-    margin-left: 20px;
     padding: 15px;
     font-size: 16px;
     width: 90%;
     height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
 }
 
 .car-vin {
-    margin-left: 20px;
     padding: 15px;
     font-size: 16px;
     width: 90%;
     height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
 }
 
 .book-date {
-    margin-left: 20px;
     padding: 15px;
     font-size: 16px;
     width: 90%;
     height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
 }
 
 .space-id {
-    margin-left: 20px;
     padding: 15px;
     font-size: 16px;
     width: 90%;
     height: 40px;
-    border: 1px solid #ccc;
-    border-radius: 1px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
     transition: border-color 0.3s ease-in-out;
     margin-bottom: 40px;
 }
 
 .label-parking {
+    margin-top: 5px;
     color: white; 
 }
 .label-parking-1 {
@@ -109,46 +105,55 @@
     margin: 0;
     position: absolute;
     display: flex;
-    background: rgb(24,20,20);
+    background: rgb(83 129 156);
     background-size: cover;
     overflow: hidden;
 }
 .dashboard{
     height: 100%;
-    background: rgb(25,25,25);
+    background: rgb(40, 62, 98);
     display: flex;
     flex-direction: column;
     width: 25%;
+    box-shadow: #00497d 0px 0px 335px;
     
 }
-
+.parking-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 20px;
+}
 .new-car-btn {
-    background: rgb(42,42,42);
+    background: rgb(15, 42, 67);
     color: white;
     padding: 20px;
-    cursor: pointer;
     font-size: 14px;
 }
-
+.g-floor{
+    margin-left: 85px;
+}
 .new-car-entry {
-    margin-left: 65px;
+    margin-left: 0px;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
     gap: 5px;
     width: 250px;
+    border-radius: 10%;
+
 }
 
 .new-car-entry div {
-    background-color: green;
+    background-color: rgb(0, 53, 128);
     width: 60px;
     height: 50px;
     padding: 10px;
     text-align: center;
     line-height: 20px;
     cursor: pointer;
-    position: relative
+    position: relative;
+    border-radius: 10%;
 }
 
 .container-parking {
@@ -163,8 +168,8 @@
 }
 
 .parking-slot-holder {
-    width: 80%;
-    height: 20%;
+    width: 95%;
+    height: 50%;
     display: flex;
 }
 
@@ -234,10 +239,11 @@
 
 
 .img-car {
-    width: 500px;
+    width: 150px;
     height: auto;
     position: absolute;
     transition: opacity 0.5s;
+
 }
 .visible {
     opacity: 1;

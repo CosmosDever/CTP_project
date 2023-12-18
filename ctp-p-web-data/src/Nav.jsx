@@ -9,6 +9,9 @@ function Nav() {
 
     const handleLogout = () => {
         localStorage.removeItem('customer_id'); // Clear sign-in data
+        localStorage.removeItem('reservation_id');
+        localStorage.removeItem('space_id');
+        
         // Redirect to home or update the state as needed
         window.location.href = '/';
     };

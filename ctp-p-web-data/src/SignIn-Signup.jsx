@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import "./SignIn-Signup.css";
+import Swal from 'sweetalert2'
+
 
 const SignInSignUp = () => {
   const [signupData, setSignupData] = useState({
@@ -23,20 +25,36 @@ const SignInSignUp = () => {
       .then(response => {
         if(response.data=="All fields are required"){
           console.log(response.data);
-          alert("All fields are required."); // Show error alert
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "All fields are required.",
+          });
         }
         else if(response.data=="Email already exists"){
           console.log(response.data);
-          alert("Email already exists. Please try again."); // Show error alert
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Email already exists. Please try again.",
+          });
         }
         else if(response.data=="Sign-up successful"){
           console.log(response.data);
-          alert("Sign-up successful!");
+          Swal.fire({
+            title: "Ok!",
+            text: "Sign-up successful!",
+            icon: "success"
+          });
         }
       })
       .catch(error => {
         console.error(error);
-        alert("Sign-up failed. Please try again."); // Show error alert
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Sign-up failed. Please try again.",
+        });
       });
   };
 
@@ -46,25 +64,44 @@ const SignInSignUp = () => {
       .then(response => {
         if (response.data=="All fields are required") {
           console.log(response.data);
-          alert("All fields are required."); // Show error alert
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "All fields are required.",
+          });
           return;
         }
         else if (response.data == "no user found") {
           console.log(response.data);
-          alert("no user found. Please check your credentials."); // Show error alert
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please check your credentials.",
+          });
           return;
         }
 
         else if(response.data){
           localStorage.setItem('customer_id', response.data[0].ID);
-          alert("Sign-in successful!");
+          Swal.fire({
+            title: "Ok!",
+            text: "Sign-in successful!",
+            icon: "success",
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "/car-parking";
+            }
+          });
           console.log(response.data);
-          window.location.href = '/car-parking';
         }
       })
       .catch(error => {
         console.error(error);
-        alert("Sign-in failed. Please check your credentials."); // Show error alert
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Sign-in failed. Please check your credentials.",
+        });
       });
   };
 

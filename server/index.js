@@ -102,6 +102,10 @@ app.post('/changepassword', (req, res) => {
 
 app.post('/carparking',(req, res) => {
     const { customer_id,space_id, car_vin, room_key, book_date } = req.body;
+    if (!customer_id || !space_id || !car_vin || !room_key || !book_date) {
+        res.send("All fields are required");
+        return;
+    }
     if (!customer_id) {
         res.status(401).send("Unauthorized");
         return;
@@ -124,7 +128,7 @@ app.post('/carparking',(req, res) => {
                             if (err) {
                                 console.log(err);
                             } else {
-                                db.query("select MAX(reservation.ID) as reservation_id,CONCAT(first_name, ' ', last_name) as customer_name, room_id, car_vin , parking_id, book_date FROM customer join reservation on customer.ID= reservation.customer_id where customer.ID =?;", [customer_id], (err, result) => {
+                                db.query("SELECT reservation.ID as reservation_id ,CONCAT(first_name, ' ', last_name) as customer_name, room_id, car_vin , parking_id, book_date FROM customer join reservation on customer.ID= reservation.customer_id where customer.ID =?;", [customer_id], (err, result) => {
                                     if (err) {
                                         console.log(err);
                                     } else {
@@ -141,20 +145,20 @@ app.post('/carparking',(req, res) => {
     });
 });
 app.post ('/cancel', (req, res) => {
-    const { reservation_id ,space_id} = req.body;
-    if (reservation_id){
-        db.query("delete from reservation where ID = ?", [reservation_id], (err, result) => {
+    const { re_id,sp_id } = req.body;
+    console.log(re_id,sp_id);
+    if (re_id && sp_id) {
+        db.query("delete from reservation where ID = ?", [re_id], (err, result) => {
             if (err) {
                 console.log(err);
-            } else {
-                res.send("Reservation cancelled successfully");
-            }
+            } 
         })
-        db.query("UPDATE parkingspace SET car_vin = Null, status = 'Vacant' WHERE ID = ?", [space_id], (err, result) => {
+        db.query("UPDATE parkingspace SET car_vin = Null, status = 'Vacant' WHERE ID = ?", [sp_id], (err, result) => {
             if (err) {
                 console.log(err);
             } 
         });
+        res.send("Reservation cancelled successfully");
 
     }
     else(

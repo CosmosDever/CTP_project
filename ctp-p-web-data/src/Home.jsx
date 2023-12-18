@@ -7,6 +7,8 @@ import parking from './assets/parking.png'
 
 
 function Home() {
+    const isSignedIn = localStorage.getItem('customer_id') !== null; // Check if user is signed in
+
     
     return (
         <>
@@ -18,9 +20,15 @@ function Home() {
                 <ul className="carparkingbox">
                     <h1>Welcome to Centerpark</h1>
                     <h2>We'll help you find a parking space.</h2>
-                    <li className="carparkingButt">
-                        <Link to="/car-parking" className="carpark">Book your parking space now!</Link>
-                    </li>
+                    {isSignedIn 
+                    ?   <li className="carparkingButt">
+                            <Link to="/car-parking" className="carpark">Book your parking space now!</Link>
+                        </li>
+                    :   <li className="carparkingButt">
+                            <Link to="/Signin-Signup" className="carpark">Book your parking space now!</Link>
+                        </li>
+                }
+                    
                 </ul>
                 <div class = "container">
                         <div><img src="https://img.freepik.com/premium-photo/top-down-aerial-view-many-cars-parking-lot-supermarket-sale-car-dealer-market_127089-10749.jpg"/></div>
