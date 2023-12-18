@@ -110,6 +110,19 @@ app.post('/carparking',(req, res) => {
         res.status(401).send("Unauthorized");
         return;
     }
+    db.query("SELECT room_key FROM reservation WHERE room_key = ?", [room_key], (selectErr, selectResult) => {
+        if (selectErr) {
+            console.log(selectErr);
+            res.send("Internal Server Error");
+            return;
+        }
+        if (selectResult.length > 0) {
+            if (selectResult[0].customer_id != customer_id) {
+                res.send("Room already reserved");
+                return;
+            }
+        }
+    })
     db.query("SELECT car_vin FROM parkingspace WHERE car_vin = ?", [car_vin], (selectErr, selectResult) => {
         if (selectErr) {
             console.log(selectErr);
@@ -121,6 +134,7 @@ app.post('/carparking',(req, res) => {
             return;
         }
     })
+
     db.query("UPDATE parkingspace SET car_vin = ?, status = 'Occupied' WHERE ID = ?", [car_vin, space_id], (err, result) => {
         if (err) {
             console.log(err);

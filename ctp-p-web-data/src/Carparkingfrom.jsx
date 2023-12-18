@@ -54,6 +54,15 @@ const Carpark = () => {
           });
           return;
         }
+        if(response.data=="Room already reserved"){
+          console.log(response.data);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Room already reserved.",
+          });
+          return;
+        }
 
         console.log(response.data);
         localStorage.setItem('parking_id', response.data[0].parking_id);
