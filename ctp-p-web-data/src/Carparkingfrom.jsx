@@ -46,7 +46,6 @@ const Carpark = () => {
   }
 
   const shouldShowCar = (slotNumber) => {
-    
     return parseInt(data_park.space_id) === slotNumber;
   };
 
