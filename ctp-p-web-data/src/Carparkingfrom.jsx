@@ -6,6 +6,22 @@ import car_logo from './assets/car.png'
 import Swal from 'sweetalert2'
 const Carpark = () => {
   const [responseData, setResponseData] = useState(null);
+  const [currentinfo, setcurrentinfo] = useState(null);
+  useEffect(() => {
+    const fetchspace = async () => {
+      try {
+        const response = await axios.get('http://localhost:3001/infoparking-space');
+
+        setcurrentinfo(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchspace();
+
+  },[]);
+  
   const [data_park , setdata_park] = useState({
     customer_id: localStorage.getItem('customer_id'),
     space_id: '', 
@@ -27,7 +43,18 @@ const Carpark = () => {
             title: "Oops...",
             text: "All fields are required.",
           });
+          return;
         }
+        if(response.data=="Car already parked"){
+          console.log(response.data);
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Car already parked.",
+          });
+          return;
+        }
+
         console.log(response.data);
         localStorage.setItem('parking_id', response.data[0].parking_id);
         console.log(response.data[0].reservation_id);
@@ -45,10 +72,20 @@ const Carpark = () => {
       });
   }
 
+  // const shouldShowCar = (slotNumber) => {
+  //   return parseInt(data_park.space_id) === slotNumber;
+  // };
   const shouldShowCar = (slotNumber) => {
+    if (currentinfo) {
+      for (let i = 0; i < currentinfo.length; i++) {
+        if (parseInt(currentinfo[i].ID) === slotNumber) {
+          return parseInt(currentinfo[i].ID) === slotNumber
+        }
+      }
+    }
     return parseInt(data_park.space_id) === slotNumber;
   };
-
+  
 
   
   const handlecancel= ()=>{
@@ -116,6 +153,7 @@ const Carpark = () => {
 
 
   return (
+
     <div className='parking' >
       <div className='dashboard'>
         <div className='parking-form'>
@@ -137,8 +175,6 @@ const Carpark = () => {
           </label>
         </div>
       
-
-        
         {responseData && responseData[0]!=="All fields are required" && (
           <div className='c_reservationCard'>
             <h2>Confrim Booking</h2>
