@@ -110,7 +110,7 @@ app.post('/carparking',(req, res) => {
         res.status(401).send("Unauthorized");
         return;
     }
-    db.query("SELECT room_key FROM reservation WHERE room_key = ?", [room_key], (selectErr, selectResult) => {
+    db.query("SELECT ID FROM room WHERE ID = ?", [room_key], (selectErr, selectResult) => {
         if (selectErr) {
             console.log(selectErr);
             res.send("Internal Server Error");

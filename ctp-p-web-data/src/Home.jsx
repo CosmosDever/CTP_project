@@ -18,7 +18,7 @@ function Home() {
             <body>
                 
                 <ul className="carparkingbox">
-                    <h1>Welcome to Centerpark</h1>
+                    <h1>Welcome to CenterPlace</h1>
                     <h2>We'll help you find a parking space.</h2>
                     {isSignedIn 
                     ?   <li className="carparkingButt">

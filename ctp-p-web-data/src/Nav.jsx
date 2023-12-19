@@ -21,7 +21,7 @@ function Nav() {
         <nav className='navbox'>
             <div className='logo'>
                 <div><img src="logo.png" /></div>
-                <div className='logo-text'>Centerpark</div>
+                <div className='logo-text'>CenterPlace</div>
             </div>
             <ul className='navboxinnav'>
                 {/* <li className ='navbutton'><Link to="/"><img src={home}/></Link></li> */}
