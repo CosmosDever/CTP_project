@@ -1,152 +1,152 @@
 [
   {
     "ID": 1,
-    "car_vin": "ABC12345678901234",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 2,
-    "car_vin": "DEF23456789012345",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 3,
-    "car_vin": "GHI34567890123456",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 4,
-    "car_vin": "JKL45678901234567",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 5,
-    "car_vin": "MNO56789012345678",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 6,
-    "car_vin": "PQR67890123456789",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 7,
-    "car_vin": "STU78901234567890",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 8,
-    "car_vin": "VWX89012345678901",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 9,
-    "car_vin": "YZA90123456789012",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 10,
-    "car_vin": "BCB01234567890123",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 11,
-    "car_vin": "CDC12345678901234",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 12,
-    "car_vin": "DED23456789012345",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 1
   },
   {
     "ID": 13,
-    "car_vin": "EFE34567890123456",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 14,
-    "car_vin": "FGH45678901234567",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 15,
-    "car_vin": "HIJ56789012345678",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 16,
-    "car_vin": "JKK67890123456789",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 17,
-    "car_vin": "LMN78901234567890",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 18,
-    "car_vin": "OPQ89012345678901",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 19,
-    "car_vin": "RST90123456789012",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 20,
-    "car_vin": "UVU01234567890123",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 21,
-    "car_vin": "VWV12345678901234",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 22,
-    "car_vin": "WXX23456789012345",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 23,
-    "car_vin": "YXY34567890123456",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 24,
-    "car_vin": "ZYZ45678901234567",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 2
   },
   {
     "ID": 25,
-    "car_vin": "AAA56789012345678",
-    "status": "Occupied",
+    "car_vin": null,
+    "status": "Vacant",
     "floor": 3
   },
   {
@@ -298,5 +298,138 @@
     "car_vin": null,
     "status": "Vacant",
     "floor": 5
-  }
+  },
+    {
+      "ID": 51,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 52,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 53,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 54,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 55,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 56,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 57,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 58,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 59,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 60,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 5
+    },
+    {
+      "ID": 61,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 62,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 63,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 64,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 65,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 66,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 67,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 68,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 69,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 70,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 71,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    },
+    {
+      "ID": 72,
+      "car_vin": null,
+      "status": "Vacant",
+      "floor": 6
+    }
+  
 ]
