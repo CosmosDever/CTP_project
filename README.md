@@ -1,3 +1,6 @@
+# run web
+cd ctp-p-web-data 
+npm run
 # to use server sql 
 cd server
 npm run dev
