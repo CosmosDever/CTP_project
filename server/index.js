@@ -110,19 +110,6 @@ app.post('/carparking',(req, res) => {
         res.status(401).send("Unauthorized");
         return;
     }
-    db.query("SELECT ID FROM room WHERE ID = ?", [room_key], (selectErr, selectResult) => {
-        if (selectErr) {
-            console.log(selectErr);
-            res.send("Internal Server Error");
-            return;
-        }
-        if (selectResult.length > 0) {
-            if (selectResult[0].customer_id != customer_id) {
-                res.send("Room already reserved");
-                return;
-            }
-        }
-    })
     db.query("SELECT car_vin FROM parkingspace WHERE car_vin = ?", [car_vin], (selectErr, selectResult) => {
         if (selectErr) {
             console.log(selectErr);
